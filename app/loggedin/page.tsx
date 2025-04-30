@@ -2,7 +2,7 @@ import { cookies } from 'next/headers';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default async function Profile() {
+export default async function LoggedIn() {
   // grab the cookie, then get the user data
   const cookie = await cookies();
   const data = cookie.get('user');
